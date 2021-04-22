@@ -1,0 +1,53 @@
+body{
+    font-family: sans-serif, 'Times New Roman', Times, serif;
+}
+ul{
+    
+    background-color: rgb(87, 73, 73);
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+    font-size: medium;
+    font-family: sans-serif;
+    font-weight: 700;
+    
+}
+li{
+    float: left;
+}
+li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+}
+li a:hover{
+    background-color:  rgb(228, 199, 204);
+    color: black;
+    text-decoration: none;
+}
+.titleBanner{
+    position: absolute;
+    font-size: 4em;
+    top: 200px;
+    left: 350px;
+    color: rgb(0, 255, 200);
+    text-shadow: 2px 2px 1px lightskyblue;
+    text-transform: uppercase;
+    
+}
+footer{
+    padding: 3px;
+    text-align: center;
+    background-color: rgb(228, 199, 204);
+    color: black;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
