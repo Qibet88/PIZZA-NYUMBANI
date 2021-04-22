@@ -1,5 +1,10 @@
 body{
     font-family: sans-serif, 'Times New Roman', Times, serif;
+    background-image: url("./images/pizza1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    opacity: 0.8;
 }
 ul{
     
@@ -35,9 +40,9 @@ li a:hover{
 .titleBanner{
     position: absolute;
     font-size: 4em;
-    top: 200px;
-    left: 350px;
-    color: rgb(0, 255, 200);
+    top: 400px;
+    left: 60px;
+    color: rgb(179, 255, 0);
     text-shadow: 2px 2px 1px lightskyblue;
     text-transform: uppercase;
     
@@ -50,4 +55,11 @@ footer{
     position: absolute;
     bottom: 0px;
     width: 100%;
+}
+.orderNow{
+    position: absolute;
+    top: 350px;
+    left: 450px;
+    color: rgb(179, 255, 0);
+    text-shadow: 2px 2px 1px lightskyblue;
 }
