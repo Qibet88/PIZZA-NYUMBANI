@@ -47,7 +47,20 @@ footer{
     text-align: center;
     background-color: rgb(228, 199, 204);
     color: black;
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     width: 100%;
+}
+#mc_embed_signup{
+    clear:left; 
+    font:14px Helvetica,Arial,sans-serif; 
+}
+.contactsWrapper{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    padding: 20px;
+    background-color: rgb(207, 171, 177);
 }
