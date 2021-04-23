@@ -51,3 +51,14 @@ footer{
     bottom: 0px;
     width: 100%;
 }
+.orderImage{
+    margin-top: 100px;
+    margin-left: 100px;
+    
+}
+#colWrapper{
+    background-color: pink;
+}
+.orderItems{
+    margin-top: 50px;
+}
