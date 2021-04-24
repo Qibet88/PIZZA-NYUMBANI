@@ -65,3 +65,14 @@ footer{
     text-shadow: 2px 2px 1px lightskyblue;
     margin-left: 350px;
 }
+.aboutUs{
+    margin-top: 80px;
+    margin-left: 300px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-align: center;
+}
+.orderButton{
+    
+}

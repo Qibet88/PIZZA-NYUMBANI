@@ -70,4 +70,8 @@ footer{
     padding: 10px;
     background-color: black;
     color: orange;
+    
+}
+#orderWrapper{
+    background-image: url("./images/orderbg.jpeg");
 }
