@@ -21,10 +21,39 @@
         <div class="container">
             <div class="row">
               <div class="col-6">
-               <div class="menuItems">
-                <marquee behavior="scroll" direction="up" scrollamount="1">Kindly Place your order here</marquee>
-               </div> 
-            
+                <form class="orderForm">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Choose Pizza Size</label>
+                        <select class="form-control" id="size">
+                            <option>Small</option>
+                            <option>Medium</option>
+                            <option>Large</option>
+                        </select>
+                        <label for="exampleFormControlSelect1">Pick Pizza crust</label>
+                        <select class="form-control" id="crust">
+                            <option>Crispy</option>
+                            <option>Gluten Free</option>
+                            <option>Stuffed</option>
+                            <option>Thin Crust</option>
+                            <option>Flatbed Crust</option>
+                        </select>
+                        <br>
+                        <label for="exampleFormControlSelect1">Select Your Favorite Toppings</label>
+                        <select class="form-control" id="toppings">
+                            <option>Pepperoni</option>
+                            <option>Margherita</option>
+                            <option>Hawaiian (Ham & Pineapple)</option>
+                            <option></option>
+                            <option>Black Olives</option>
+                            <option>Potato, sausage, pancetta/speck/bacon</option>
+                            <option>Gorgonzola and mushroom</option>
+                        </select>
+                        <label for="number">Number of Pizza's</label>
+                        <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
+                        <br>
+                        <button type="button" class="btn btn-success">CHECKOUT</button>
+                    </div>
+                </form>
               </div>
               <div class="col-6" id="colWrapper">
                 <div class="orderImage">
