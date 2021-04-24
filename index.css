@@ -5,6 +5,7 @@ body{
     background-size: cover;
     background-color: black;
     opacity: 0.8;
+    
 }
 ul{
     
@@ -58,8 +59,9 @@ footer{
 }
 .orderNow{
     position: absolute;
-    top: 350px;
-    left: 450px;
+    margin-top: 50%;
+    margin-bottom: 50%;
     color: rgb(179, 255, 0);
     text-shadow: 2px 2px 1px lightskyblue;
+    margin-left: 350px;
 }
