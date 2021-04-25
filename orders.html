@@ -25,9 +25,9 @@
                     <div class="form-group">
                         <label for="exampleFormControlSelect1">Choose Pizza Size</label>
                         <select class="form-control" id="size">
-                            <option>Small</option>
-                            <option>Medium</option>
-                            <option>Large</option>
+                            <option>Small - 750</option>
+                            <option>Medium - 1000</option>
+                            <option>Large - 1200</option>
                         </select>
                         <label for="exampleFormControlSelect1">Pick Pizza crust</label>
                         <select class="form-control" id="crust">
@@ -40,16 +40,26 @@
                         <br>
                         <label for="exampleFormControlSelect1">Select Your Favorite Toppings</label>
                         <select class="form-control" id="toppings">
-                            <option>Pepperoni</option>
-                            <option>Margherita</option>
-                            <option>Hawaiian (Ham & Pineapple)</option>
+                            <option>Pepperoni - 100</option>
+                            <option>Margherita - 100</option>
+                            <option>Hawaiian (Ham & Pineapple) - 100</option>
                             <option></option>
-                            <option>Black Olives</option>
-                            <option>Potato, sausage, pancetta/speck/bacon</option>
-                            <option>Gorgonzola and mushroom</option>
+                            <option>Black Olives - 100</option>
+                            <option>Potato, sausage, pancetta/speck/bacon - 100</option>
+                            <option>Gorgonzola and mushroom - 100</option>
                         </select>
-                        <label for="number">Number of Pizza's</label>
+                        <div>
+                        <label for="number">Number of Pizzas</label>
                         <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
+                        </div>
+                        <div class="deliveryOption" required>
+                            <label for="sel1">Would Like home delivery?:</label>
+                            <select class="form-control" id="pick">
+                                <option value="1">Yes</option>
+                                <option value="2">No</option>
+    
+                            </select>
+                        </div>
                         <br>
                         <button type="button" class="btn btn-success">CHECKOUT</button>
                     </div>
