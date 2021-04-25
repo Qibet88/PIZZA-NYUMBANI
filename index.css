@@ -73,6 +73,6 @@ footer{
     color: white;
     text-align: center;
 }
-.orderButton{
-    
+.orderButton button:hover{
+        background-color: coral;
 }
