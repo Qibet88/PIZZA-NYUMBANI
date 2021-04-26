@@ -73,3 +73,11 @@ footer{
     color: white;
     text-align: center;
 }
+@media screen and (max-width: 600px){
+    ul{
+        float: none;
+        display: block;
+        background-color: white;
+        color: black;
+    }
+}

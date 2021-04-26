@@ -1,4 +1,4 @@
-(function($) {window.fnames = new Array(); 
+/*(function($) {window.fnames = new Array(); 
     window.ftypes = new Array();
     fnames[1]='FNAME';
     ftypes[1]='text';
@@ -8,11 +8,12 @@
     ftypes[2]='text';
 }
 (jQuery));
-var $mcj = jQuery.noConflict(true);
-function Order(size, crust, topping) {
+var $mcj = jQuery.noConflict(true);*/
+
+function Order(size, crust, toppings) {
     this.size = size;
     this.crust = crust;
-    this.topping = toppings;
+    this.toppings = toppings;
 }
 Order.prototype.completeOrder = function () {
     return this.size + " with the crust of " + this.crust + " and " + this.toppings + " as toppings.";
@@ -29,43 +30,48 @@ Charge.prototype.finalCharge = function () {
 
 
 var sizePrice = [750, 1000, 600]
-var deliverPrices = [0, 300];
+var deliveryPrices = [0, 300];
+const toppings = 100;
 
-$(document).ready(function () {
-    $('.orderForm').submit(function (event) {
+$(document).ready(function () 
+{
+    $('form#orderForm').submit(function (event) {
         event.preventDefault();
        
 
-        var pizzaSize = parseInt($('#size').val());
+        var pizzaSize = ($('#size').val());
 
         var pizzaCrust = $('#crust').val();
 
-        var pizzaTop = $('#toppings').val();
+        var pizzaTopping = $('#toppings').val();
 
-        var pizzaQty = parseInt($('#number').val());
+        var pizzaNumber = parseInt($('#number').val());
 
-        var pizzaPick = parseInt($('#pick').val());
+        var pizzaChoice = parseInt($('#choose').val());
 
 
         var price = sizePrice[pizzaSize - 1];
 
 
-        var DeliveryCost = deliverPrices[pizzaPick - 1];
+        var deliveryCharge = deliveryPrices[pizzaChoice - 1];
 
 
 
-        newOrder = new Order(pizzaType, pizzaSize, pizzaCrust, pizzaTop);
-        newTotal = new Total(price, pizzaQty, DeliveryCost);
-        if (pizzaPick===1){
-        alert("Your oder is: " + newOrder.fullOrder() + ".continue to see your total bill");
-        alert("your bill is: " + newTotal.finalTotal());
+        pizzaOrder = new Order(pizzaSize, pizzaCrust, pizzaTopping);
+        newTotal = new Charge(price, pizzaNumber, deliveryCharge);
+       
+        if (pizzaChoice===1){
+            
+        alert("You made an order of: " + pizzaOrder.completeOrder() + "your total charge is: " + newTotal.finalCharge());
+        alert("Thankyou for letting us serve you");
         }else{
-            if(pizzaPick===2){
-                prompt("Enter where you want your pizza to be delivered");
-                alert("Your order has been received and it will be delivered. Continue to see your order details");
-                alert("Your oder is: " + newOrder.fullOrder() + ".continue to see your total bill");
-                alert("your bill is: " + newTotal.finalTotal());
+            if(pizzaChoice===2){
+                prompt("Where would you like your pizza delivered to?");
+                alert("Your order has been received and it will be delivered.");
+                alert("You made an order of: " + pizzaOrder.completeOrder() + "your total charge is: " + newTotal.finalCharge());
+                alert("Thankyou for letting us serve you");
             }
         }
 
     });
+});

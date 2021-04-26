@@ -21,13 +21,13 @@
         <div class="container">
             <div class="row">
               <div class="col-6" id="orderWrapper">
-                <form class="orderForm">
+                <form id="orderForm">
                     <div class="form-group">
                         <label for="exampleFormControlSelect1">Choose Pizza Size</label>
                         <select class="form-control" id="size">
-                            <option>Small - 750</option>
-                            <option>Medium - 1000</option>
-                            <option>Large - 1200</option>
+                            <option value="1">Small - 750</option>
+                            <option value="2">Medium - 1000</option>
+                            <option value="3">Large - 1200</option>
                         </select>
                         <label for="exampleFormControlSelect1">Pick Pizza crust</label>
                         <select class="form-control" id="crust">
@@ -46,7 +46,7 @@
                             <option></option>
                             <option>Black Olives - 100</option>
                             <option>Potato, sausage, pancetta/speck/bacon - 100</option>
-                            <option>Gorgonzola and mushroom - 100</option>
+                            <option>Gorgonzola and mushroom</option>
                         </select>
                         <div>
                         <label for="number">Number of Pizzas</label>
@@ -54,14 +54,14 @@
                         </div>
                         <div class="deliveryOption" required>
                             <label for="sel1">Would Like home delivery?:</label>
-                            <select class="form-control" id="pick">
-                                <option value="1">Yes</option>
-                                <option value="2">No</option>
+                            <select class="form-control" id="choose">
+                                <option value="1">No</option>
+                                <option value="2">Yes</option>
     
                             </select>
                         </div>
                         <br>
-                        <button type="button" class="btn btn-success">CHECKOUT</button>
+                        <button type="submit" class="btn btn-success">CHECKOUT</button>
                     </div>
                 </form>
               </div>
@@ -76,8 +76,8 @@
         <footer>
             <marquee direction= "left" behavior="scroll" scrollamount="4"><p><em>Delivering Pizza to your Doorstep, Just as you like it.  Copyright@2021</em></p></marquee>
         </footer>
-          
-        <script src="scripts.js"></script>
         <script src="jquery-3.6.0.js"></script>
+        <script src="scripts.js"></script>
+     
     </body>
 </html>

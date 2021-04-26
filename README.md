@@ -1,5 +1,5 @@
 # PIZZA NYUMBANI
-#### This is a platform for one to order pizza easily, {April 4, 2021}
+#### This is a platform for one to order pizza easily, {April 26, 2021}
 ####  **Contribution by Moringa School**
 ## Description
 This allows a customer to select their choice of pizza, crust and toppings and choose whether they need it delivered to their residence.
