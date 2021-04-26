@@ -31,7 +31,7 @@ Charge.prototype.finalCharge = function () {
 
 var sizePrice = [750, 1000, 600]
 var deliveryPrices = [0, 300];
-const toppings = 100;
+
 
 $(document).ready(function () 
 {
@@ -39,7 +39,7 @@ $(document).ready(function ()
         event.preventDefault();
        
 
-        var pizzaSize = ($('#size').val());
+        var pizzaSize = parseInt($('#size').val());
 
         var pizzaCrust = $('#crust').val();
 
